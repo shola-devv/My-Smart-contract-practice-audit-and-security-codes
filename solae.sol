@@ -34,21 +34,18 @@ var contract = web3.eth.contract(abi).at(address);
 var gasEstimate = contract.myAweSomeMethod.estimateGas(arg1, arg2,
  {from: account})
 
-contract caller {
-18 
-19 function make_calls(calledContract _calledContract) public {
-20 
-21 // Calling calledContract and calledLibrary directly
-22 _calledContract.calledFunction();
-23 calledLibrary.calledFunction();
-24 
-25 // Low-level calls using the address object for calledContract
-26 require(address(_calledContract).
-27 call(bytes4(keccak256("calledFunction()"))));
-28 require(address(_calledContract).
-29 delegatecall(bytes4(keccak256("calledFunction()"))));
-30 git commit -m"a sexy commit"
-31 
-//
-32 
-33 
+contract calle
+ function make_calls(calledContract _calledContract) public {
+ 
+ // Calling calledContract and calledLibrary directly
+ _calledContract.calledFunction();
+ calledLibrary.calledFunction();
+ 
+ // Low-level calls using the address object for calledContract
+ require(address(_calledContract).
+ call(bytes4(keccak256("calledFunction()"))));
+ require(address(_calledContract).
+ delegatecall(bytes4(keccak256("calledFunction()"))));
+ git commit -m"a sexy commit"
+
+  
