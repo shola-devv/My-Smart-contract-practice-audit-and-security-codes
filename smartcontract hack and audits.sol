@@ -121,5 +121,16 @@ balances[msg.sender] = 0;
  uint Val;
  uint Time;
  }
+ contract soft {
+
+addy[adrss => uint]; 
+function giveFirst( uint money) public{
+require(message.sender.balance > money, 'money exists in his account');
+addy(msg.sender) = money;
+msg.sender.transfer(money);
+
+}
+
+ }
  
  Message[] public History;
