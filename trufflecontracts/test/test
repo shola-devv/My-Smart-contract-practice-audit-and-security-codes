@@ -1,0 +1,11 @@
+const simp = artifacts.require("HackToken.sol");
+
+contract('simp', ()=>{
+  it('should hack', async()=>{
+    const storage = await simp.new();
+  await storage.firstCall();
+  const data = await storage.myBalance();
+  assert(data.toString() === '1')
+  })
+
+})

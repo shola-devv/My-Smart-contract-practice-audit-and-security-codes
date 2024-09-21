@@ -3,6 +3,6 @@ const HackToken = artifacts.require("HackToken");
 
 module.exports = async function(deployer) {
     await deployer.deploy(Token);
-    const tokenAddress =Token.address;
-    await deployer.deploy(HackToken, tokenAddress);
+    const tokenInstance = await Token.deployed();
+    await deployer.deploy(HackToken, tokenInstance.address);
 };
