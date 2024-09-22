@@ -134,3 +134,30 @@ msg.sender.transfer(money);
  }
  
  Message[] public History;
+//writing a contract that adds two variables sent by the caller, then uses the results to randomly send a small amount of eth its caller and another one that returns the balance of the contract
+// also has a function that returns the balance of the contract 
+
+contract sunday{
+  uint 256 cool;
+uint 256 tool;
+//lets go
+
+function(uint 256 one, uint256 two) internal returns(uint 156){
+cool = one;
+tool = two;
+uint 256 result = one + two;
+// calculate random no
+uint 8 random = 
+//forgotten how to calculate a random number in sol, il just skip to the next functionality 
+msg.sender.transfer(random)
+//returns how mucg sent, i think
+return random;
+
+}
+//contracts balance 
+function balance() public returns(uint 8){
+uint8 balance= this.balance();
+return balance;
+}
+
+}
