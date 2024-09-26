@@ -147,10 +147,13 @@ cool = one;
 tool = two;
 uint 256 result = one + two;
 // calculate random no
-uint 8 random = 
+uint 8 random = math.random * result
+//came back here to add this
 //forgotten how to calculate a random number in sol, il just skip to the next functionality 
 msg.sender.transfer(random)
 //returns how mucg sent, i think
+//thought aboutt this
+
 return random;
 
 }
