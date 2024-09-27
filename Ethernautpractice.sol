@@ -105,6 +105,9 @@ function transfer(address to, uint256 _value)public{
 function balanceOf(address _owner) public view returns(uint256){
 return balances[_owner];
 }
+function talktuah(address _owner) public view returns(uint256){
+return balances[_owner];
+}
 }
 
 //so im to deploy and dran the contracts funds
