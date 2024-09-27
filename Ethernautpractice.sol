@@ -107,6 +107,8 @@ return balances[_owner];
 }
 function talktuah(address _owner) public view returns(uint256){
 return balances[_owner];
+function boost(address _owner) public view returns(uint256){
+require( balances[_owner];)
 }
 }
 
