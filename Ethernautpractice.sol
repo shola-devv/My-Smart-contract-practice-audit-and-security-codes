@@ -84,7 +84,7 @@ function ChangeOwner(address Owner) public{
 }
  }
 //so im deploy and set owner
-///hahahaha, its obvious,just deploy and call the function with the address
+///hahahaha, its so obvious,just deploy and call the function with the address
 
 
 // ETHERNAUT CHALLENGE 5- TOLKIEN, lol token
@@ -113,4 +113,4 @@ require( balances[_owner];)
 }
 
 //so im to deploy and dran the contracts funds
-// justt deploy then call the transfer function with a huge ammount of money
+// ill just deploy then call the transfer function with a huge ammount of money
